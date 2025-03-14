@@ -13,9 +13,10 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: ["http://localhost:3000", "https://frontend-client-omega.vercel.app"], 
+    origin: ["http://localhost:3000", "https://frontend-client-omega.vercel.app", "https://frontend-client-5z67i0wkg-saifd227s-projects.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true 
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true
 }));
 
   
